@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sandip Thakur, a DevOps & Cloud Professional with expertise in AWS, Azure, GCP, and a background in Sales & Marketing. Explore my portfolio.">
     <meta name="keywords" content="Sandip Thakur, DevOps, Cloud Computing, AWS, Azure, GCP, Jenkins, Terraform, Ansible, Sales, Marketing, Portfolio, Resume">
+    <meta name="author" content="Debrup Mukherjee">
 
     <title>Sandip Thakur | DevOps & Cloud Professional | Portfolio</title>
 
@@ -19,9 +20,36 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json" id="person-schema">
+    <!-- Person Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sandip Thakur",
+      "jobTitle": "DevOps & Cloud Professional",
+      "email": "thakur.sandip26@gmail.com",
+      "telephone": "+918016346701",
+      "image": "https://sandipthakur07.github.io/profile.jpg",
+      "url": "https://sandipthakur07.github.io/",  
+      "sameAs": [
+        "https://www.linkedin.com/in/sandip-thakur-35721b187/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dhanbad",
+        "addressCountry": "IN"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Sikkim Central University"
+        }
+      ],
+      "knowsAbout": ["Cloud", "DevOps", "AWS", "Azure", "GCP", "Docker", "Jenkins (CI/CD)", "Terraform (IaC)"],
+      "description": "Tech-savvy problem solver with expertise in AWS, Azure, and GCP. Passionate about creating innovative automated solutions, optimizing systems, and driving efficiency. Experienced in sales, marketing, and team collaboration."
+    }
     </script>
+
 </head>
 <body>
      <!-- Go Top Button -->
@@ -300,68 +328,14 @@
 
     <footer>
         <div class="container">
-            <p>© <span id="footer-year"></span> Sandip Thakur. All rights reserved.</p>
+            <p>© <span id="footer-year"></span> Sandip Thakur. Designed by <a href="http://dmukherjeetextiles.github.io">Debrup Mukherjee</a>.</p>
         </div>
     </footer>
 
     <!-- Link to your JS file -->
     <script src="script.js"></script>
 
-    <!-- JS to inject schema -->
-    <script>
-        const schema = {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Sandip Thakur",
-          "jobTitle": "DevOps & Cloud Professional",
-          "email": "mailto:thakur.sandip26@gmail.com",
-          "telephone": "tel:+918016346701",
-          "url": "https://sandipthakur07.github.io/", 
-          "sameAs": [
-              "https://www.linkedin.com/in/sandip-thakur-35721b187/" 
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            // "streetAddress": "Flat no. 404 Vinayaka Complex Gyan Mukherjee Road, hirapur", // Optional: Full street address
-            "addressLocality": "Dhanbad",
-            "postalCode": "826001", // General Dhanbad pincode, update if specific one is better
-            "addressRegion": "JH",
-            "addressCountry": "IN"
-          },
-          "alumniOf": [
-            {
-              "@type": "EducationalOrganization",
-              "name": "Sikkim Central University"
-              // "sameAs": "URL_OF_UNIVERSITY" // Optional
-            },
-            {
-              "@type": "EducationalOrganization",
-              "name": "Upgrad" // For the certificate program
-            }
-          ],
-          "knowsAbout": [
-            "DevOps", "Cloud Computing", "AWS", "Azure", "GCP", "Jenkins", "Terraform", "Ansible", "CI/CD", "Microservices",
-            "Sales", "Marketing", "Business Development", "Team Management", "Problem Solving", "Analytical Skills", "HR Management"
-          ],
-          "description": "Sandip Thakur is a DevOps & Cloud Professional with expertise in AWS, Azure, GCP, and a strong background in sales, marketing, and team leadership. Passionate about automation and innovative solutions.",
-           "worksFor": [ // Add current or most recent significant roles
-             { "@type": "Organization", "name": "Self-Employed (BOLT Manufacturing)", "startDate": "2023-12", "endDate": "2024-09" },
-             { "@type": "Organization", "name": "Sorting Hats Technologies (UNACADEMY)", "startDate": "2021-05", "endDate": "2021-11" },
-             { "@type": "Organization", "name": "Lamiwood", "jobTitle": "Sales Manager", "startDate": "2019-03", "endDate": "2020-08" }
-             // Add other relevant past roles if desired
-           ],
-          "image": "profile.jpg", 
-          "mainEntityOfPage": { // If this schema is for the main content of a page
-            "@type": "WebPage",
-            "@id": "https://sandipthakur07.github.io/" // IMPORTANT: CHANGE THIS TO YOUR ACTUAL PORTFOLIO URL
-          }
-        };
-
-        const schemaScriptTag = document.getElementById('person-schema');
-        if (schemaScriptTag) {
-            schemaScriptTag.textContent = JSON.stringify(schema, null, 2);
-        }
-    </script>
+    
 
 </body>
 </html>

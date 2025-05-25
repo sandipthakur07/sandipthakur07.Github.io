@@ -18,7 +18,7 @@
     --card-border-base: #E0E0E0;
     --shadow-base: 0 4px 12px rgba(0, 0, 0, 0.06);
     --shadow-hover-base: 0 7px 20px rgba(0, 0, 0, 0.1);
-    --profile-pic-border-base: rgba(74, 144, 226, 0.3); /* Lightened primary for border */
+    --profile-pic-border-base: #e0e350; /* Lightened primary for border */
     --skill-pill-bg-base: var(--accent-color-base);
     --skill-pill-text-base: var(--heading-color-base);
     --footer-bg-base: var(--heading-color-base);
@@ -58,7 +58,7 @@
     --card-border-dark-mode: #3A455A;
     --shadow-dark-mode: 0 5px 15px rgba(0, 0, 0, 0.3);
     --shadow-hover-dark-mode: 0 8px 22px rgba(0, 0, 0, 0.4);
-    --profile-pic-border-dark-mode: rgba(80, 227, 194, 0.4); /* Lightened dark primary for border */
+    --profile-pic-border-dark-mode: #e0e350; /* Lightened dark primary for border */
     --skill-pill-bg-dark-mode: var(--accent-color-dark-mode);
     --skill-pill-text-dark-mode: var(--text-color-dark-mode);
     --footer-bg-dark-mode: #12161F;
